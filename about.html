@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>A team of passionate and creative minds came together to form GAMA Events. We are an event management company that stands out with it's creative concepts, innovative themes and exceptional execution of each project. We have made an imprint in the market and in the minds of people who have experienced the magic of our expertise in event management!
+
+</p></div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/gopika.jpg" alt="Gopika" style="width:50%" >
+      <div class="container">
+        <h2 style="text-align:center">Gopika K S</h2>
+        <p style="text-align:center">gopikasuresh@gmail.com</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/aswin.jpg" alt="Aswin " style="width:55.5%">
+      <div class="container">
+        <h2 style="text-align:center">Aswin Antony</h2>
+        <p style="text-align:center">aswinantony@gmail.com</p>
+        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/mariya.jpg" alt="Maria " style="width:53.3%">
+      <div class="container">
+        <h2 style="text-align:center">Maria Johny</h2>
+        <p style="text-align:center">mariajohny@gmail.com</p>
+        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/adi.jpg" alt="Adithya " style="width:53.3%">
+      <div class="container">
+        <h2 style="text-align:center">Adithya P</h2>
+        <p style="text-align:center">adithyap@gmail.com</p>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
